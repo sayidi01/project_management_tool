@@ -6,7 +6,7 @@ const session = require("express-session");
 
 const app = express();
 const connecting = require("./db/conn.js");
-const User = require("./models/users.js");
+const{ User} = require("./models/users.js");
 const userRouter = require("./routers/userRouter.js");
 const projectsRouter = require("./routers/projectsRouter.js");
 const tasksRouter = require("./routers/tasksRouter.js");
